@@ -23,12 +23,13 @@ function App() {
   return (
     <div className="calc-container">
       <div className="display">{input}</div>
+      <div className="author">umesh</div>
 
       <div className="buttons">
-        <button onClick={clear}>C</button>
-        <button onClick={() => handleClick("/")}>/</button>
-        <button onClick={() => handleClick("*")}>*</button>
-        <button onClick={() => handleClick("-")}>-</button>
+        <button className="clear" onClick={clear}>C</button>
+        <button onClick={() => handleClick("/")}>÷</button>
+        <button onClick={() => handleClick("*")}>×</button>
+        <button onClick={() => handleClick("-")}>−</button>
 
         <button onClick={() => handleClick("7")}>7</button>
         <button onClick={() => handleClick("8")}>8</button>
@@ -38,7 +39,7 @@ function App() {
         <button onClick={() => handleClick("4")}>4</button>
         <button onClick={() => handleClick("5")}>5</button>
         <button onClick={() => handleClick("6")}>6</button>
-        <button onClick={calculate}>=</button>
+        <button className="equal" onClick={calculate}>=</button>
 
         <button onClick={() => handleClick("1")}>1</button>
         <button onClick={() => handleClick("2")}>2</button>
